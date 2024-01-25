@@ -6,6 +6,12 @@
 @import "components/buttons";
 @import "components/navigation";
 @import "components/utils";
+@import "components/slider";
 
 // Layout
 @import "layout/header";
+@import "layout/content";
+@import "layout/footer";
+
+// Pages
+@import "pages/home";

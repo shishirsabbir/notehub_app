@@ -1,0 +1,34 @@
+.slider {
+    width: 100%;
+    height: 100%;
+    // background-color: #9bd4db;
+
+    @include center-flex;
+    flex-direction: column;
+
+    &__text {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    &__image {
+        padding: 2rem;
+
+        .logo {
+            background-color: black;
+            color: white;
+
+            // &__text {
+
+            //     &--main {
+                    
+            //     }
+
+            //     &--sub {
+
+            //     }
+            // }
+        }
+    }
+}
