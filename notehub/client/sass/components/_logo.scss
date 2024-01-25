@@ -1,0 +1,47 @@
+.logo {
+    width: 13rem;
+    background-color: $lapis-lazuli;
+    padding: 0.5rem;
+    color: $white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline-offset: 0.3rem;
+    transition: all 0.2s;
+    user-select: none;
+
+    &__text {
+        font-family: sans-serif;
+        font-size: 2.4rem;
+
+        &--main {
+            display: block;
+            font-weight: bold;
+            margin: 0;
+            border-bottom: 1px solid $white;
+        }
+
+        &--sub {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: lighter;
+            margin: 0;
+            padding-top: 0.3rem;
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover {
+        background-color: $teal;
+        outline: 0.3rem solid $teal;
+        transform: scale(1.03);
+    }
+
+    &:hover &__text--sub {
+        transform: scale(1.1) translateX(0.5rem);
+    }
+
+    &:active {
+        outline: 0.15rem solid $teal;
+        transform: scale(1.01);
+    }
+}

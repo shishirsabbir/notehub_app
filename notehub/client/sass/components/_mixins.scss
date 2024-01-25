@@ -3,3 +3,24 @@
     align-items: center;
     justify-content: center;
 }
+
+// hover mixin
+@mixin hover-animation {
+    background-color: $lapis-lazuli;
+    color: $white;
+    cursor: pointer;
+    outline-offset: 0.3rem;
+    transition: all 0.2s;
+    user-select: none;
+    
+    &:hover {
+        background-color: $teal;
+        outline: 0.3rem solid $teal;
+        transform: scale(1.03);
+    }
+
+    &:active {
+        outline: 0.15rem solid $teal;
+        transform: scale(1.01);
+    }
+}

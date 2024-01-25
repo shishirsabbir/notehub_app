@@ -1,0 +1,25 @@
+.menu {
+    font-size: 2.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        @include hover-animation;
+
+        margin: 0 0.8rem;
+        padding: 0.8rem 1.5rem;
+        border-radius: 0.5rem;
+
+        &--link {
+            color: white;
+            font-weight: lighter;
+        }
+        
+        &.selected {
+            background-color: $mint;
+            font-weight: bold;
+        }
+    }
+}

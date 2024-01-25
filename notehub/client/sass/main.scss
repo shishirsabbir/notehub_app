@@ -1,7 +1,11 @@
-@import "components/reset";
+// Components
 @import "components/colors";
-@import "components/typography";
+@import "components/reset";
 @import "components/mixins";
 @import "components/logo";
 @import "components/buttons";
 @import "components/navigation";
+@import "components/utils";
+
+// Layout
+@import "layout/header";
