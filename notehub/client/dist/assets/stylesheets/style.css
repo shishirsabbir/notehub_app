@@ -67,6 +67,21 @@ body {
   transform: scale(1.01);
 }
 
+.btn {
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+.btn:active {
+  box-shadow: 0px 0px 0px black;
+}
+
 .menu {
   font-size: 2.2rem;
   display: flex;
@@ -139,6 +154,53 @@ a:visited {
 
 .content__home {
   height: 50rem;
+}
+
+.content__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 160px;
+}
+.content__login__text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.content__login__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content__login__form__text {
+  width: 300px;
+  height: 35px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background: transparent;
+}
+.content__login__form__text--1 {
+  margin: 22px 0 10px;
+}
+.content__login__form__text:focus {
+  border: none;
+}
+.content__login__form__btn {
+  margin-top: 20px;
+}
+.content__login__forgotpass {
+  margin-top: 45px;
+  font-size: 13px;
+}
+
+.wrapper__login {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: transparent;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

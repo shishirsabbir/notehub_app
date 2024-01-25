@@ -1,3 +1,49 @@
 .content__home {
     height: 50rem;
 }
+
+.content__login {
+
+    @include center-flex;
+    flex-direction: column;
+    margin-top: 160px;
+
+    &__text {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__form {
+        @include center-flex;
+        flex-direction: column;
+        
+        &__text {
+            width: 300px;
+            height: 35px;
+            padding: 0px 5px;
+            border-radius: 5px;
+            background: transparent;
+
+            &--1 {
+                margin: 22px 0 10px;
+            }
+
+            &:focus {
+                border: none;
+            }
+
+        }
+
+        &__btn {
+            margin-top: 20px;
+            
+        }
+
+    }
+
+    &__forgotpass {
+        margin-top: 45px;
+        font-size: 13px;
+    }
+}

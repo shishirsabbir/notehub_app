@@ -9,28 +9,17 @@
     <link rel="stylesheet" href="assets/stylesheets/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <!-- Logo -->
-            <div class="logo header__logo">
-                <div class="logo__text">
-                    <span class="logo__text--main">NoteHub</span>
-                    <span class="logo__text--sub">A Simple Note</span>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <nav class="menu header__menu">
-                <div class="menu__item selected"><a href="#" class="menu__item--link">Login</a></div>
-                <div class="menu__item"><a href="#" class="menu__item--link">Home</a></div>
-                <!--     <div class="menu__item">Notes</div> -->
-                <div class="menu__item"><a href="#" class="menu__item--link">About</a></div>
-                <div class="menu__item"><a href="#" class="menu__item--link">Contact</a></div>
-            </nav>
-        </header>
+    <div class="wrapper wrapper__login">
 
         <main class="content content__login">
-            
+            <p class="content__login__text">Log in</p>
+            <form class="content__login__form">
+                <input type="text" class="content__login__form__text content__login__form__text--1" placeholder="Email">
+                <input type="text" class="content__login__form__text content__login__form__text--2" placeholder="Password">
+
+                <button class="btn content__login__form__btn">Log in</button>
+            </form>
+            <p class="content__login__forgotpass"><a href="#">Forgot your password?</a></p>
         </main>
     </div>
 
