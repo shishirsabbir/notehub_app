@@ -1,0 +1,57 @@
+@mixin flex-start {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+
+//note-page
+.header {
+    margin-bottom: 5rem;
+    // background-color: aqua;
+}
+
+.content__notes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.content__notes__wrapper {
+    width: 20rem;
+    height: 20rem;
+    background-color: aquamarine;
+    margin: 0rem 2rem 2rem 0;
+    border-radius: 0.8rem;
+    transition: transform 0.2s;
+
+    &__text {
+        @include flex-start;
+
+        padding: 1rem;
+
+        &__h1 {
+            margin-bottom: 1rem;
+        }
+
+        &__description {
+            margin: 0.8rem 0 6.3rem;
+            font-size: 1.1rem;
+        }
+
+        &__info {
+            @include flex-start;
+
+            &__1 {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: 0.2rem 0.2rem 0.3rem black;
+    }
+}

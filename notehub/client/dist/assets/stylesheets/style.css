@@ -203,4 +203,52 @@ a:visited {
   border-radius: 0.5rem;
 }
 
+.header {
+  margin-bottom: 5rem;
+}
+
+.content__notes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.content__notes__wrapper {
+  width: 20rem;
+  height: 20rem;
+  background-color: aquamarine;
+  margin: 0rem 2rem 2rem 0;
+  border-radius: 0.8rem;
+  transition: transform 0.2s;
+}
+.content__notes__wrapper__text {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: start;
+  padding: 1rem;
+}
+.content__notes__wrapper__text__h1 {
+  margin-bottom: 1rem;
+}
+.content__notes__wrapper__text__description {
+  margin: 0.8rem 0 6.3rem;
+  font-size: 1.1rem;
+}
+.content__notes__wrapper__text__info {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: start;
+}
+.content__notes__wrapper__text__info__1 {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.content__notes__wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0.2rem 0.2rem 0.3rem black;
+}
+
 /*# sourceMappingURL=style.css.map */
