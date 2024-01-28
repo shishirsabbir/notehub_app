@@ -37,13 +37,17 @@
 
         &__btn {
             margin-top: 20px;
-            
         }
 
     }
 
     &__forgotpass {
         margin-top: 45px;
+        font-size: 13px;
+    }
+
+    &__signup {
+        margin-top: 15px;
         font-size: 13px;
     }
 }

@@ -13,12 +13,12 @@
         border-radius: 0.5rem;
 
         &--link {
-            color: white;
+            color: $space-cadet;
             font-weight: lighter;
         }
         
         &.selected {
-            background-color: $mint;
+            background-color: $plum-web;
             font-weight: bold;
         }
     }

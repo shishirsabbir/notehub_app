@@ -55,3 +55,80 @@
         box-shadow: 0.2rem 0.2rem 0.3rem black;
     }
 }
+
+
+//Contact Us Page
+
+.contact {
+    @include center-flex;
+    flex-direction: column;
+
+    &__header {
+        font-size: 5rem;
+    }
+
+    &__text {
+        font-size: 2.3rem;
+        margin-top: 2rem;
+    }
+}
+
+//About page
+
+.about {
+
+    &__header {
+        font-size: 3.5rem;
+        text-align: left;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 1.2rem;
+        
+        &__1 {
+            margin-bottom: 0.5rem;
+            display: block;
+            font-size: 2.1rem;
+        }
+
+        &__header {
+            margin-bottom: 0.3rem;
+            margin-top: 1.8rem;
+            font-size: 1.8rem;
+            
+        }
+
+        &__devnames {
+            list-style: circle;
+            margin-left: 1rem;
+            font-size: 1.6rem;
+
+            li {
+                margin-top: 0.3rem;
+            }
+        }
+
+        &__contactdev {
+            font-size: 1.8rem;
+            text-align: center;
+            display: block;
+            margin-top: 3rem;
+        }
+    }
+
+    
+}
+
+//Sign Up Page
+
+.signup {
+    @include center-flex;
+
+    flex-direction: column;
+    font-size: 2rem;
+
+    &__form {
+        
+    }
+}

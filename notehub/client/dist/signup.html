@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteHub - Personl note taking</title>
+
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Logo -->
+            <div class="logo header__logo">
+                <div class="logo__text">
+                    <span class="logo__text--main">NoteHub</span>
+                    <span class="logo__text--sub">A Simple Note</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="menu header__menu">
+                <div class="menu__item"><a href="#" class="menu__item--link">Login</a></div>
+                <div class="menu__item"><a href="#" class="menu__item--link  selected">Sign Up</a></div>
+                <div class="menu__item"><a href="#" class="menu__item--link">Home</a></div>
+                <!--     <div class="menu__item">Notes</div> -->
+                <div class="menu__item"><a href="#" class="menu__item--link">About</a></div>
+                <div class="menu__item"><a href="#" class="menu__item--link">Contact</a></div>
+            </nav>
+        </header>
+
+        <main class="content content__signup">
+            <section class="signup">
+                <h1 class="signup__header">Sign Up</h1>
+                <form action="#" class="signup__form">
+                    <label for="firstname">Firat Name</label>
+                    <input type="text" id="firstname" name="firstname" class="signup__from__box signup__from--firstname" placeholder="First Name" required>
+                    <lable for="lastname">Last Name</lable>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="signup__from__box signup__from--username" required>
+                    <input type="text" id="lastname" name="lastname" class="signup__from__box signup__from--lastname" placeholder="Last Name" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="signup__from__box signup__from--email" placeholder="Email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="signup__from__box signup__from--password" required>
+                </form>
+                <button class="signup__btn btn">Submit</button>
+            </section>
+        </main>
+    </div>
+
+    <!-- adding the js file -->
+    <script src="assets/bundle.js"></script>
+</body>
+</html>
