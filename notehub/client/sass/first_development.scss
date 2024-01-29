@@ -129,6 +129,85 @@
     font-size: 2rem;
 
     &__form {
-        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        margin-top: 2.5rem;
+
+        &__firstname {
+            grid-column: 2 span;
+        }
+
+        &__lastname {
+            grid-column: 2 span;
+        }
+
+        &__username {
+            grid-column: 2 span;
+        }
+
+        &__email {
+            grid-column: 2 span;
+        }
+
+        &__password {
+            grid-column: 2 / 4;
+        }
+
+        div {
+            label {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__box {
+            width: 27.5rem;
+            height: 2.9rem;
+            border-radius: 0.5rem;
+            border-color: transparent;
+
+            &--username {
+                margin-left: 0.8rem;
+            }
+
+            &--email {
+                margin-left: 4.1rem;
+            }
+
+            &--password {
+                margin-left: 5rem;
+                width: 24.5rem;
+            }
+
+            &--confirmpass {
+                margin-left: 0.5rem;
+                width: 24.5rem;
+            }
+        }
+
+        &__password {
+            
+
+            label {
+                font-size: 1.8rem;
+            }
+
+            &--pass {
+
+                label {
+                    margin-left: 3.3rem;
+                }
+            }
+
+            &--confirmpass {
+                margin-top: 1rem;
+                display: flex;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 4rem;
     }
 }
